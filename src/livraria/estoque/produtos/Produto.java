@@ -50,6 +50,17 @@ abstract public class Produto {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        Produto outro = (Produto) obj;
+        return this.nome.equals(outro.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.nome.hashCode();
+    }
+
+    @Override
     public String toString() {
         return "[Nome: " + this.nome + ", id: " + this.id + ", Preço: " + this.preco + "]";
     }

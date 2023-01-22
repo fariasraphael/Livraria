@@ -1,5 +1,7 @@
 import livraria.estoque.Estoque;
 import livraria.estoque.produtos.*;
+import livraria.venda.CarrinhoDeCompras;
+import livraria.venda.RegistroDeVenda;
 
 import javax.xml.transform.stream.StreamSource;
 import java.sql.SQLOutput;
@@ -23,7 +25,9 @@ public class Sistema {
        Brinquedo dama = new Brinquedo("Dama", 502, 5.00, "Jogo de tabuleiro");
 
 
+       RegistroDeVenda caixa = new RegistroDeVenda();
        Estoque estoque = new Estoque();
+       CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
        estoque.adicionarItemNoEstoque(dookie);
 
        estoque.adicionarItemNoEstoque(dama);
@@ -34,6 +38,18 @@ public class Sistema {
        estoque.quantidadeDeItemEmEstoque(bola);
 
        estoque.verTodosOsItensDeUmTipoDeEstouqe("album");
+       carrinho.adicionarProdutoAoCarrinho(estoque, dama);
+       carrinho.adicionarProdutoAoCarrinho(estoque, bola);
+       carrinho.verItensDoCarrinho();
+
+       caixa.venderProdutos(carrinho, estoque);
+
+
+       System.out.println(caixa.getDinheiroNocaixa());
+       carrinho.verItensDoCarrinho();
+
+
+
 
        }
 
