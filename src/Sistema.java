@@ -33,17 +33,7 @@ public class Sistema {
        estoque.verTodosOsItensEmEstoque();
        estoque.quantidadeDeItemEmEstoque(bola);
 
-       estoque.verTodosOsItensDeUmTipoDeEstouqe("brinquedo");
-
-
-       //System.out.println(bola.getClass().getSimpleName().toString().equals("Brinquedo"));
-
-
-
-
-
-
-
+       estoque.verTodosOsItensDeUmTipoDeEstouqe("album");
 
        }
 
