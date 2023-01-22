@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="587d95a7-9f15-4b2e-8b59-13933ff74a2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Livraria.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sistema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/ControleDeEstoque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/Estoque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/produtos/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/produtos/Brinquedo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/produtos/Filme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/produtos/Jogo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/produtos/Livro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/produtos/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/venda/OperacaoDeVenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/venda/PontoDeVenda.java" afterDir="false" />
+    <list default="true" id="587d95a7-9f15-4b2e-8b59-13933ff74a2b" name="Changes" comment="crio classe carrinho e métodos adicionarProdutoAoCarrinho e verItensDoCarrinho">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/estoque/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/venda/CarrinhoDeCompras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/venda/CarrinhoDeCompras.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/out/production/Livraria/livraria/venda/PontoDeVenda.class" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,7 +39,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RunManager">
@@ -77,6 +66,28 @@
       <option name="presentableId" value="Default" />
       <updated>1673479856727</updated>
     </task>
+    <task id="LOCAL-00001" summary="criação do gerenciamento de estoque de livraria">
+      <created>1674355999263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674355999263</updated>
+    </task>
+    <task id="LOCAL-00002" summary="criação do gerenciamento de estoque de livraria">
+      <created>1674356020903</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674356020903</updated>
+    </task>
+    <task id="LOCAL-00003" summary="crio classe carrinho e métodos adicionarProdutoAoCarrinho e verItensDoCarrinho">
+      <created>1674389839869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674389839869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +100,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="criação do gerenciamento de estoque de livraria" />
+    <MESSAGE value="crio classe carrinho e métodos adicionarProdutoAoCarrinho e verItensDoCarrinho" />
+    <option name="LAST_COMMIT_MESSAGE" value="crio classe carrinho e métodos adicionarProdutoAoCarrinho e verItensDoCarrinho" />
   </component>
 </project>

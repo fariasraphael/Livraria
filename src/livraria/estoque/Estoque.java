@@ -37,7 +37,7 @@ public class Estoque {
         }
     }
 
-    private <P extends Produto > Boolean verificadorDeItemEmEstoque(P produto) {
+    public <P extends Produto > Boolean verificadorDeItemEmEstoque(P produto) {
         return this.produtosT.contains(produto);
     }
 
@@ -54,9 +54,6 @@ public class Estoque {
             }
         }
     }
-
-
-
     @Override
     public String toString () {
         return produtosT.toString();
