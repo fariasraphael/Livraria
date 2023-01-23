@@ -14,10 +14,14 @@ public class RegistroDeVenda {
     public <P extends Produto> void venderProdutos(CarrinhoDeCompras carrinho, Estoque estoque) {
 
         for (int i = 0; i < carrinho.getCarrinho().size(); i++) {
-            if (estoque.verificadorDeItemEmEstoque(carrinho.getCarrinho().get(i))) {
+            if (carrinho.getCarrinho().get(i).getQuantidade() != 0) {
                 this.dinheiroNocaixa += carrinho.getCarrinho().get(i).getPreco();
                 estoque.reduzirQuantidadeDoItemNoEstoque(carrinho.getCarrinho().get(i));
+
+            }else{
+                estoque.reduzirQuantidadeDoItemNoEstoque(carrinho.getCarrinho().get(i));
             }
+
         }
         carrinho.getCarrinho().clear();
     }

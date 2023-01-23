@@ -30,11 +30,16 @@ public class CarrinhoDeCompras {
     }
 
     public void verItensDoCarrinho (){
+        Double valorTotalDeCompras = 0.0;
         if(carrinho.isEmpty()) {
             System.out.println("Seu carrinho está vazio");
         } else {
             System.out.println("Itens no carrinho:");
-            carrinho.forEach(System.out::println);
+            for (Produto p : this.getCarrinho()) {
+                System.out.println(p);
+                valorTotalDeCompras += p.getPreco();
+            }
+            System.out.println("Valor total de compras no carrinho: R$" + valorTotalDeCompras);
         }
     }
 }

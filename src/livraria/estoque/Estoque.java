@@ -28,8 +28,7 @@ public class Estoque {
 
     public <P extends Produto> void reduzirQuantidadeDoItemNoEstoque (P produto) {
         if(produto.getQuantidade() == 0 || produto.getQuantidade() == null){
-            System.out.println("Retira do item não realizada");
-            this.quantidadeDeItemEmEstoque(produto);
+            System.out.println("Venda do item " + produto.getNome() +" não realizada, pois não a saldo do item em estoque.");
         }
         else{
             produto.setQuantidade(produto.getQuantidade()-1);
