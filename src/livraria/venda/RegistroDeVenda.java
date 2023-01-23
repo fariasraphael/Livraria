@@ -3,9 +3,6 @@ package livraria.venda;
 import livraria.estoque.Estoque;
 import livraria.estoque.produtos.Produto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RegistroDeVenda {
 
     private Double dinheiroNocaixa = 0.0;

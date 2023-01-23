@@ -3,10 +3,6 @@ import livraria.estoque.produtos.*;
 import livraria.venda.CarrinhoDeCompras;
 import livraria.venda.RegistroDeVenda;
 
-import javax.xml.transform.stream.StreamSource;
-import java.sql.SQLOutput;
-import java.util.Scanner;
-
 public class Sistema {
     public static void main(String[] args) {
        Livro codigoLimpo = new Livro("Código Limpo", 101, 50.00, "Robert Cecil Martin", "Alta Books");

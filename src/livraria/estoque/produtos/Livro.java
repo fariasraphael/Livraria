@@ -1,7 +1,5 @@
 package livraria.estoque.produtos;
 
-import java.sql.SQLOutput;
-
 public class Livro extends Produto {
     private String autor;
     private String editora;
